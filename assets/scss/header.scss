@@ -1,0 +1,39 @@
+#header-div{
+    height:5%;
+    width:100vw;
+    background-color: blue;
+    margin:0;
+     font-family:fantasy;
+     color:white;
+     padding:10px;
+     font-size:x-large;
+     display:flex;
+    
+     
+    
+}
+#options {
+    
+    font-family: sans-serif;
+     display:flex;
+    list-style: none;
+
+    
+  }
+  #header-div div{
+    display:flex;
+    margin-right:70%;
+  }
+  
+.list-items{
+    color:white;
+    padding:5px;
+    position:relative;
+    text-decoration: none;
+    display:inline; 
+    margin-top:-1rem;  
+}
+
+
+
+  

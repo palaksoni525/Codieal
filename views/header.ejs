@@ -1,0 +1,33 @@
+<header id="main-header">
+    <div id="header-div">
+          <div>
+            Codieal
+          </div>
+      <div id="options-div">
+        <ul  id="options">
+          <% if(locals.user){%>
+            <li >
+             <a href="/users/profile/<%=locals.user.id%>" class="list-items2 list-items"> <%= user.name %></a>
+              
+            </li>
+            <li >
+              <a href="/users/sign-out" class="list-items2 list-items">SignOut</a>
+          </li>
+  
+  
+         <% }else{%>
+          <h1>
+          </h1>
+           
+            <li class="list-items">
+              <a href="/users/sign-in" class="list-items"> SignIn</a>
+            </li>
+            <li class="list-items">
+              <a href="/users/sign-up" class="list-items"> SignUp</a>
+            </li>
+           
+          <% } %>
+      </ul>
+      </div>
+    </div>
+</header>

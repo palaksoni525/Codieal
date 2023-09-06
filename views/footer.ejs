@@ -1,0 +1,19 @@
+<footer id="main-footer">
+    <div id="outer-div">
+          <div>
+            Palak soni.All Rights Reserved
+          </div>
+          <div id="inner-div2">
+              <li >
+                <a href="/" class="list-items">
+                    Home
+                </a>
+              </li>
+             <%if(locals.user){%>
+              <li>
+                <a href="/users/profile/<%=locals.user.id%>" class="list-items"> profile</a>
+              </li>
+              <%}%>
+          </div>
+    </div>
+</footer>

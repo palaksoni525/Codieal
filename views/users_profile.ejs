@@ -1,0 +1,34 @@
+
+    <body >
+        
+        <h1>
+            codieal <%= title %>
+        </h1>
+        <img src="<%=user.avatar %>" alt="<%=user.name %>" width="100" border="2px solid black">
+           
+         <% if(user.id==profile_user.id){ %>
+             
+            <div>
+                    <form action="/users/update/<%=profile_user.id %>"  enctype="multipart/form-data" method="POST">
+                       name
+                       <p>
+                        <input type="text" name="name" placeholder="update name" value="<%=profile_user.name%>" required>
+                       </p>
+                       Email<p>
+                       <input type="email" name="email" placeholder="update email" value="<%=profile_user.email%>" required>
+                         </p>
+                       <input type="file" name="avatar" placeholder="Profile Picture">
+                       <button type="submit">Update</button>
+                    </form>
+                 </div>
+
+         <%}else {%>
+             User Name
+              <p>  <%=profile_user.name %> </p>
+             Email
+              <p>  <%=profile_user.email %> </p>
+            <%}%>
+        
+        
+    </body>
+
